@@ -25,6 +25,7 @@ namespace SchoolManagementSystem
             //Disable Update Button
             updateDepartmentButton.Enabled = false;
             saveDepartmentButton.Enabled = false;
+            deleteDepartmentButton.Enabled=false;
         }
 
         private void addNewDepartmentButton_Click(object sender, EventArgs e)
