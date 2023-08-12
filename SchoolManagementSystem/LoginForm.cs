@@ -49,5 +49,17 @@ namespace SchoolManagementSystem
                 Application.Exit();
             }
         }
+
+
+
+        private void passwordTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

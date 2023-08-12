@@ -40,7 +40,7 @@ namespace SchoolManagementSystem
             englishTextBox.Clear();
             idScoreStudentTextBox.Focus();
             saveScoreStudentButton.Enabled = true;
-            
+
         }
 
         private void saveScoreStudentButton_Click(object sender, EventArgs e)
