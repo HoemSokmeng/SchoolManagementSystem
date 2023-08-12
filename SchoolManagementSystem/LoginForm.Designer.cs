@@ -158,9 +158,9 @@
             label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Location = new Point(375, 38);
             label4.Name = "label4";
-            label4.Size = new Size(305, 46);
+            label4.Size = new Size(298, 46);
             label4.TabIndex = 0;
-            label4.Text = "Please login From";
+            label4.Text = "Please Login First\r\n";
             // 
             // LoginForm
             // 
