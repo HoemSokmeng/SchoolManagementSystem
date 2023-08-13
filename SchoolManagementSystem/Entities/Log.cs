@@ -10,7 +10,7 @@ namespace SchoolManagementSystem.Entities
     {
         public int Id { get; set; }
         public DateTime? TimeStamp { get; set; }
-        public uint TimeShift { get; set; }
+        public string? TimeShift { get; set; }
 
     }
 

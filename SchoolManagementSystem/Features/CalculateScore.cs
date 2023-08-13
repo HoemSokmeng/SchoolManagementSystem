@@ -83,8 +83,13 @@ namespace SchoolManagementSystem.Features
             {
                 throw new ArgumentException("ScoreStudent not found!!!");
             }
-            DbContext.ScoreStudents.Remove(s);
-            DbContext.SaveChanges();
+            DialogResult result = MessageBox.Show("Are you sure to delete this score?", "Delete Score student", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                DbContext.ScoreStudents.Remove(s);
+                DbContext.SaveChanges();
+            }
+           
         }
         public List<ScoreStudent> GetAllScoreStudent()
         {

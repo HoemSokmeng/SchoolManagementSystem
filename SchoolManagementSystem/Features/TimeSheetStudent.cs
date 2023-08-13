@@ -78,8 +78,13 @@ namespace SchoolManagementSystem.Features
             {
                 throw new ArgumentException("Student not found!");
             }
-            DbContext.Students.Remove(std);
-            DbContext.SaveChanges();
+            DialogResult result = MessageBox.Show("Are you sure to delete this student?", "Delete Student", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                DbContext.Students.Remove(std);
+                DbContext.SaveChanges();
+            }
+            
         }
         public List<StudentView> GetAllStudent()
         {

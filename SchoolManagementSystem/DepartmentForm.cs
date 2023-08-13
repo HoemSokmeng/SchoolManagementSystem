@@ -95,6 +95,7 @@ namespace SchoolManagementSystem
                 addNewDepartmentButton.Enabled = true;
                 saveDepartmentButton.Enabled = true;
                 updateDepartmentButton.Enabled = false;
+                deleteDepartmentButton.Enabled = false;
             }
         }
 
@@ -119,6 +120,7 @@ namespace SchoolManagementSystem
                 addNewDepartmentButton.Enabled = false;
                 saveDepartmentButton.Enabled = false;
                 updateDepartmentButton.Enabled = true;
+                deleteDepartmentButton.Enabled = true;
             }
 
         }

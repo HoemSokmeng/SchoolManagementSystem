@@ -62,8 +62,13 @@ namespace SchoolManagementSystem.Features
             {
                 throw new ArgumentException("Teacher not found!");
             }
-            DbContext.Teachers.Remove(t);
-            DbContext.SaveChanges();
+            DialogResult result = MessageBox.Show("Are you sure to delete this teacher?", "Delete Teacher", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                DbContext.Teachers.Remove(t);
+                DbContext.SaveChanges();
+            }
+           
         }
         public void LogTeacher(string id, Log loInfo)
         {

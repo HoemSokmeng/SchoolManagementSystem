@@ -31,7 +31,7 @@ namespace SchoolManagementSystem
         {
             try
             {
-                var atten = new Log() { TimeStamp = DateTime.Now, TimeShift = 0 };
+                var atten = new Log() { TimeStamp = DateTime.Now, TimeShift = "Join" };
                 timeSheet.LogTeacher(idTeacherTextBox.Text, atten);
                 ShowMessage("Time-in Successfully!", true);
             }
@@ -47,7 +47,7 @@ namespace SchoolManagementSystem
         {
             try
             {
-                var atten = new Log() { TimeStamp = DateTime.Now, TimeShift = 1 };
+                var atten = new Log() { TimeStamp = DateTime.Now, TimeShift = "Leave" };
                 timeSheet.LogTeacher(idTeacherTextBox.Text, atten);
                 ShowMessage("Time-Out Successfully!", true);
             }

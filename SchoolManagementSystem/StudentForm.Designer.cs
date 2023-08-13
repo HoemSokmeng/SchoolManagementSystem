@@ -61,7 +61,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1281, 112);
+            panel1.Size = new Size(1351, 112);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -71,13 +71,13 @@
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(389, 24);
             label1.Name = "label1";
-            label1.Size = new Size(478, 50);
+            label1.Size = new Size(571, 60);
             label1.TabIndex = 3;
             label1.Text = "Student Form Information";
             // 
             // addStudentButton
             // 
-            addStudentButton.Location = new Point(597, 354);
+            addStudentButton.Location = new Point(143, 416);
             addStudentButton.Name = "addStudentButton";
             addStudentButton.Size = new Size(161, 50);
             addStudentButton.TabIndex = 0;
@@ -105,7 +105,7 @@
             dateTimePickerStudent.Format = DateTimePickerFormat.Custom;
             dateTimePickerStudent.Location = new Point(299, 354);
             dateTimePickerStudent.Name = "dateTimePickerStudent";
-            dateTimePickerStudent.Size = new Size(269, 39);
+            dateTimePickerStudent.Size = new Size(269, 45);
             dateTimePickerStudent.TabIndex = 2;
             // 
             // label2
@@ -113,7 +113,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(72, 167);
             label2.Name = "label2";
-            label2.Size = new Size(130, 32);
+            label2.Size = new Size(151, 38);
             label2.TabIndex = 4;
             label2.Text = "Identity ID:";
             // 
@@ -121,7 +121,7 @@
             // 
             idStudentTextBox.Location = new Point(299, 164);
             idStudentTextBox.Name = "idStudentTextBox";
-            idStudentTextBox.Size = new Size(248, 39);
+            idStudentTextBox.Size = new Size(248, 45);
             idStudentTextBox.TabIndex = 5;
             // 
             // label3
@@ -129,7 +129,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(72, 227);
             label3.Name = "label3";
-            label3.Size = new Size(173, 32);
+            label3.Size = new Size(200, 38);
             label3.TabIndex = 6;
             label3.Text = "Student Name:";
             // 
@@ -137,7 +137,7 @@
             // 
             nameStudentTextBox.Location = new Point(299, 224);
             nameStudentTextBox.Name = "nameStudentTextBox";
-            nameStudentTextBox.Size = new Size(248, 39);
+            nameStudentTextBox.Size = new Size(248, 45);
             nameStudentTextBox.TabIndex = 7;
             // 
             // label4
@@ -145,7 +145,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(72, 288);
             label4.Name = "label4";
-            label4.Size = new Size(97, 32);
+            label4.Size = new Size(114, 38);
             label4.TabIndex = 8;
             label4.Text = "Gender:";
             // 
@@ -153,7 +153,7 @@
             // 
             sexStudentTextBox.Location = new Point(299, 285);
             sexStudentTextBox.Name = "sexStudentTextBox";
-            sexStudentTextBox.Size = new Size(248, 39);
+            sexStudentTextBox.Size = new Size(248, 45);
             sexStudentTextBox.TabIndex = 9;
             // 
             // label5
@@ -161,7 +161,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(714, 167);
             label5.Name = "label5";
-            label5.Size = new Size(103, 32);
+            label5.Size = new Size(122, 38);
             label5.TabIndex = 10;
             label5.Text = "Address:";
             // 
@@ -169,7 +169,7 @@
             // 
             addressStudentTextBox.Location = new Point(910, 164);
             addressStudentTextBox.Name = "addressStudentTextBox";
-            addressStudentTextBox.Size = new Size(261, 39);
+            addressStudentTextBox.Size = new Size(261, 45);
             addressStudentTextBox.TabIndex = 11;
             // 
             // label6
@@ -177,7 +177,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(714, 227);
             label6.Name = "label6";
-            label6.Size = new Size(87, 32);
+            label6.Size = new Size(102, 38);
             label6.TabIndex = 12;
             label6.Text = "Phone:";
             // 
@@ -185,7 +185,7 @@
             // 
             phoneStudentTextBox.Location = new Point(910, 224);
             phoneStudentTextBox.Name = "phoneStudentTextBox";
-            phoneStudentTextBox.Size = new Size(261, 39);
+            phoneStudentTextBox.Size = new Size(261, 45);
             phoneStudentTextBox.TabIndex = 13;
             // 
             // label7
@@ -193,7 +193,7 @@
             label7.AutoSize = true;
             label7.Location = new Point(714, 288);
             label7.Name = "label7";
-            label7.Size = new Size(147, 32);
+            label7.Size = new Size(171, 38);
             label7.TabIndex = 14;
             label7.Text = "Department:";
             // 
@@ -201,7 +201,7 @@
             // 
             departmentStudentTextBox.Location = new Point(910, 285);
             departmentStudentTextBox.Name = "departmentStudentTextBox";
-            departmentStudentTextBox.Size = new Size(261, 39);
+            departmentStudentTextBox.Size = new Size(261, 45);
             departmentStudentTextBox.TabIndex = 15;
             // 
             // label8
@@ -209,13 +209,13 @@
             label8.AutoSize = true;
             label8.Location = new Point(72, 359);
             label8.Name = "label8";
-            label8.Size = new Size(110, 32);
+            label8.Size = new Size(129, 38);
             label8.TabIndex = 16;
             label8.Text = "BirthDay:";
             // 
             // saveStudentButton
             // 
-            saveStudentButton.Location = new Point(775, 354);
+            saveStudentButton.Location = new Point(346, 416);
             saveStudentButton.Name = "saveStudentButton";
             saveStudentButton.Size = new Size(132, 50);
             saveStudentButton.TabIndex = 17;
@@ -225,7 +225,7 @@
             // 
             // updateStudentButton
             // 
-            updateStudentButton.Location = new Point(608, 410);
+            updateStudentButton.Location = new Point(534, 416);
             updateStudentButton.Name = "updateStudentButton";
             updateStudentButton.Size = new Size(132, 50);
             updateStudentButton.TabIndex = 18;
@@ -235,9 +235,9 @@
             // 
             // closeButton
             // 
-            closeButton.Location = new Point(949, 375);
+            closeButton.Location = new Point(910, 416);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(112, 50);
+            closeButton.Size = new Size(149, 50);
             closeButton.TabIndex = 19;
             closeButton.Text = "Close";
             closeButton.UseVisualStyleBackColor = true;
@@ -245,7 +245,7 @@
             // 
             // deleteStudentButton
             // 
-            deleteStudentButton.Location = new Point(775, 410);
+            deleteStudentButton.Location = new Point(732, 416);
             deleteStudentButton.Name = "deleteStudentButton";
             deleteStudentButton.Size = new Size(132, 50);
             deleteStudentButton.TabIndex = 20;
@@ -255,7 +255,7 @@
             // 
             // StudentForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(15F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(1352, 740);

@@ -57,8 +57,13 @@ namespace SchoolManagementSystem.Features
             {
                 throw new ArgumentException("Department not found!");
             }
-            DbContext.Departments.Remove(d);
-            DbContext.SaveChanges();
+            DialogResult result = MessageBox.Show("Are you sure to delete this department?", "Delete Department", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                DbContext.Departments.Remove(d);
+                DbContext.SaveChanges();
+            }
+            
         }
         public List<Department> GetAllDepartment()
         {

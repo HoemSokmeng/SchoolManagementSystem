@@ -34,7 +34,7 @@ namespace SchoolManagementSystem
                     Subject = "Admin",
                     Saray = "001",
                     Address = "Admin",
-                    Phone = "000000000",
+                    Phone = "00000000",
                     UserAccount = new UserAccount()
                     {
                         UserName = "Admin",
