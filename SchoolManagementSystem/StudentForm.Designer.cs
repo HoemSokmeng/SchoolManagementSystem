@@ -38,7 +38,6 @@
             label3 = new Label();
             nameStudentTextBox = new TextBox();
             label4 = new Label();
-            sexStudentTextBox = new TextBox();
             label5 = new Label();
             addressStudentTextBox = new TextBox();
             label6 = new Label();
@@ -50,6 +49,7 @@
             updateStudentButton = new Button();
             closeButton = new Button();
             deleteStudentButton = new Button();
+            sexStudentComBo = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)studentDataGridView).BeginInit();
             SuspendLayout();
@@ -105,7 +105,7 @@
             dateTimePickerStudent.Format = DateTimePickerFormat.Custom;
             dateTimePickerStudent.Location = new Point(299, 354);
             dateTimePickerStudent.Name = "dateTimePickerStudent";
-            dateTimePickerStudent.Size = new Size(269, 45);
+            dateTimePickerStudent.Size = new Size(248, 45);
             dateTimePickerStudent.TabIndex = 2;
             // 
             // label2
@@ -148,13 +148,6 @@
             label4.Size = new Size(114, 38);
             label4.TabIndex = 8;
             label4.Text = "Gender:";
-            // 
-            // sexStudentTextBox
-            // 
-            sexStudentTextBox.Location = new Point(299, 285);
-            sexStudentTextBox.Name = "sexStudentTextBox";
-            sexStudentTextBox.Size = new Size(248, 45);
-            sexStudentTextBox.TabIndex = 9;
             // 
             // label5
             // 
@@ -253,12 +246,22 @@
             deleteStudentButton.UseVisualStyleBackColor = true;
             deleteStudentButton.Click += deleteStudentButton_Click;
             // 
+            // sexStudentComBo
+            // 
+            sexStudentComBo.FormattingEnabled = true;
+            sexStudentComBo.Items.AddRange(new object[] { "Male", "Female" });
+            sexStudentComBo.Location = new Point(299, 280);
+            sexStudentComBo.Name = "sexStudentComBo";
+            sexStudentComBo.Size = new Size(248, 46);
+            sexStudentComBo.TabIndex = 21;
+            // 
             // StudentForm
             // 
             AutoScaleDimensions = new SizeF(15F, 38F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(1352, 740);
+            Controls.Add(sexStudentComBo);
             Controls.Add(deleteStudentButton);
             Controls.Add(closeButton);
             Controls.Add(updateStudentButton);
@@ -271,7 +274,6 @@
             Controls.Add(label5);
             Controls.Add(addressStudentTextBox);
             Controls.Add(label4);
-            Controls.Add(sexStudentTextBox);
             Controls.Add(label3);
             Controls.Add(nameStudentTextBox);
             Controls.Add(addStudentButton);
@@ -304,7 +306,6 @@
         private Label label3;
         private TextBox nameStudentTextBox;
         private Label label4;
-        private TextBox sexStudentTextBox;
         private Label label5;
         private TextBox addressStudentTextBox;
         private Label label6;
@@ -316,5 +317,6 @@
         private Button updateStudentButton;
         private Button closeButton;
         private Button deleteStudentButton;
+        private ComboBox sexStudentComBo;
     }
 }

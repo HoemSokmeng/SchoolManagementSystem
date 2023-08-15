@@ -43,16 +43,25 @@ namespace SchoolManagementSystem
         {
             try
             {
-                var dpt = new Department()
+                int foundIdex = timeSheetDepartment.GetAllDepartment().FindIndex(dt => dt.Id == idDepartmentTextBox.Text.Trim());
+                if (foundIdex == -1)
                 {
-                    Id = idDepartmentTextBox.Text.Trim(),
-                    DptName = departmentNameTextBox.Text.Trim(),
-                    DptManager = departmentManagerTextBox.Text.Trim(),
-                    DptPrice = departmentPriceTextBox.Text.Trim(),
-                    DptPhone = departmentPhoneTextBox.Text.Trim()
-                };
-                timeSheetDepartment.AddDepartment(dpt);
-                LoadToGrid();
+                    var dpt = new Department()
+                    {
+                        Id = idDepartmentTextBox.Text.Trim(),
+                        DptName = departmentNameTextBox.Text.Trim(),
+                        DptManager = departmentManagerTextBox.Text.Trim(),
+                        DptPrice = departmentPriceTextBox.Text.Trim(),
+                        DptPhone = departmentPhoneTextBox.Text.Trim()
+                    };
+                    timeSheetDepartment.AddDepartment(dpt);
+                    LoadToGrid();
+                }
+                else
+                {
+                    MessageBox.Show($"ID : {idDepartmentTextBox.Text.Trim()} is  have already!!");
+                }
+
             }
             catch (ArgumentException Ae)
             {
@@ -63,7 +72,6 @@ namespace SchoolManagementSystem
                 addNewDepartmentButton.Enabled = true;
                 saveDepartmentButton.Enabled = false;
             }
-
         }
 
         private void LoadToGrid()
@@ -137,4 +145,3 @@ namespace SchoolManagementSystem
         }
     }
 }
-

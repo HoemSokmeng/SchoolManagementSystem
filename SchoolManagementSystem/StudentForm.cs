@@ -31,7 +31,7 @@ namespace SchoolManagementSystem
         {
             idStudentTextBox.Clear();
             nameStudentTextBox.Clear();
-            sexStudentTextBox.Clear();
+            sexStudentComBo.Text = string.Empty;
             departmentStudentTextBox.Clear();
             addressStudentTextBox.Clear();
             phoneStudentTextBox.Clear();
@@ -43,18 +43,26 @@ namespace SchoolManagementSystem
         {
             try
             {
-                var std = new Student()
+                int foundIdex = timeSheetStudent.GetAllStudent().FindIndex(st => st.IdentityId == idStudentTextBox.Text.Trim());
+                if (foundIdex == -1)
                 {
-                    Id = idStudentTextBox.Text.Trim(),
-                    Name = nameStudentTextBox.Text.Trim(),
-                    Sex = sexStudentTextBox.Text.Trim(),
-                    Department = departmentStudentTextBox.Text.Trim(),
-                    Address = addressStudentTextBox.Text.Trim(),
-                    Phone = phoneStudentTextBox.Text.Trim(),
-                    BirthDay = dateTimePickerStudent.Value.Date,
-                };
-                timeSheetStudent.AddStudent(std);
-                LoadToGrid();
+                    var std = new Student()
+                    {
+                        Id = idStudentTextBox.Text.Trim(),
+                        Name = nameStudentTextBox.Text.Trim(),
+                        Sex = sexStudentComBo.Text.Trim(),
+                        Department = departmentStudentTextBox.Text.Trim(),
+                        Address = addressStudentTextBox.Text.Trim(),
+                        Phone = phoneStudentTextBox.Text.Trim(),
+                        BirthDay = dateTimePickerStudent.Value.Date,
+                    };
+                    timeSheetStudent.AddStudent(std);
+                    LoadToGrid();
+                }
+                else
+                {
+                    MessageBox.Show($"ID : {idStudentTextBox.Text.Trim()} is  have already!!");
+                }
             }
             catch (ArgumentException Ae)
             {
@@ -87,7 +95,7 @@ namespace SchoolManagementSystem
         {
             try
             {
-                timeSheetStudent.UpdateStudent(idStudentTextBox.Text, nameStudentTextBox.Text, sexStudentTextBox.Text,
+                timeSheetStudent.UpdateStudent(idStudentTextBox.Text, nameStudentTextBox.Text, sexStudentComBo.Text,
                     departmentStudentTextBox.Text, addressStudentTextBox.Text, phoneStudentTextBox.Text, dateTimePickerStudent.Value.Date);
                 LoadToGrid();
             }
@@ -121,7 +129,7 @@ namespace SchoolManagementSystem
             {
                 idStudentTextBox.Text = studentDataGridView.SelectedCells[0].Value.ToString();
                 nameStudentTextBox.Text = studentDataGridView.SelectedCells[1].Value.ToString();
-                sexStudentTextBox.Text = studentDataGridView.SelectedCells[2].Value.ToString();
+                sexStudentComBo.Text = studentDataGridView.SelectedCells[2].Value.ToString();
                 departmentStudentTextBox.Text = studentDataGridView.SelectedCells[3].Value.ToString();
                 addressStudentTextBox.Text = studentDataGridView.SelectedCells[4].Value.ToString();
                 phoneStudentTextBox.Text = studentDataGridView.SelectedCells[5].Value.ToString();
@@ -135,7 +143,7 @@ namespace SchoolManagementSystem
 
         private void deleteStudentButton_Click(object sender, EventArgs e)
         {
-            timeSheetStudent.DeleteStudent(idStudentTextBox.Text, nameStudentTextBox.Text, sexStudentTextBox.Text,
+            timeSheetStudent.DeleteStudent(idStudentTextBox.Text, nameStudentTextBox.Text, sexStudentComBo.Text,
                 departmentStudentTextBox.Text, addressStudentTextBox.Text, phoneStudentTextBox.Text, dateTimePickerStudent.Value);
             LoadToGrid();
             addStudentButton.Enabled = true;

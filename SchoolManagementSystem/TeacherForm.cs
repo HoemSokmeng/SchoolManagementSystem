@@ -49,22 +49,30 @@ namespace SchoolManagementSystem
         {
             try
             {
-                var tch = new Teacher()
+                int foundIdex = timeSheet.GetAllTeacher().FindIndex(th => th.TecId == idTeacherTextBox.Text.Trim());
+                if (foundIdex == -1)
                 {
-                    Id = idTeacherTextBox.Text.Trim(),
-                    Name = nameTeacherTextBox.Text.Trim(),
-                    Subject = subjectTeacherTextBox.Text.Trim(),
-                    Saray = salaryTeacherTextBox.Text.Trim(),
-                    Address = addressTeacherTextBox.Text.Trim(),
-                    Phone = phoneTeacherTextBox.Text.Trim(),
-                    UserAccount = new UserAccount()
+                    var tch = new Teacher()
                     {
-                        UserName = usernameTextBox.Text.Trim(),
-                        Password = passwordTextBox.Text.Trim()
-                    }
-                };
-                timeSheet.AddTeacher(tch);
-                LoadToGrid(); //Update the gridview
+                        Id = idTeacherTextBox.Text.Trim(),
+                        Name = nameTeacherTextBox.Text.Trim(),
+                        Subject = subjectTeacherTextBox.Text.Trim(),
+                        Saray = salaryTeacherTextBox.Text.Trim(),
+                        Address = addressTeacherTextBox.Text.Trim(),
+                        Phone = phoneTeacherTextBox.Text.Trim(),
+                        UserAccount = new UserAccount()
+                        {
+                            UserName = usernameTextBox.Text.Trim(),
+                            Password = passwordTextBox.Text.Trim()
+                        }
+                    };
+                    timeSheet.AddTeacher(tch);
+                    LoadToGrid(); //Update the gridview
+                }
+                else
+                {
+                    MessageBox.Show($"ID : {idTeacherTextBox.Text.Trim()} is  have already!!");
+                }
             }
             catch (ArgumentException Ae)
             {
