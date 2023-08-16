@@ -54,6 +54,7 @@
             updateTeacherButton = new Button();
             closeButton = new Button();
             deleteTeacherButton = new Button();
+            Search = new TextBox();
             ((System.ComponentModel.ISupportInitialize)TeacherDataGridView).BeginInit();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
@@ -107,7 +108,7 @@
             // 
             phoneTeacherTextBox.Location = new Point(284, 378);
             phoneTeacherTextBox.Name = "phoneTeacherTextBox";
-            phoneTeacherTextBox.Size = new Size(275, 45);
+            phoneTeacherTextBox.Size = new Size(275, 39);
             phoneTeacherTextBox.TabIndex = 14;
             // 
             // label7
@@ -115,7 +116,7 @@
             label7.AutoSize = true;
             label7.Location = new Point(35, 381);
             label7.Name = "label7";
-            label7.Size = new Size(102, 38);
+            label7.Size = new Size(87, 32);
             label7.TabIndex = 13;
             label7.Text = "Phone:";
             // 
@@ -123,7 +124,7 @@
             // 
             addressTeacherTextBox.Location = new Point(284, 318);
             addressTeacherTextBox.Name = "addressTeacherTextBox";
-            addressTeacherTextBox.Size = new Size(275, 45);
+            addressTeacherTextBox.Size = new Size(275, 39);
             addressTeacherTextBox.TabIndex = 12;
             // 
             // label6
@@ -131,7 +132,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(35, 321);
             label6.Name = "label6";
-            label6.Size = new Size(122, 38);
+            label6.Size = new Size(103, 32);
             label6.TabIndex = 11;
             label6.Text = "Address:";
             // 
@@ -139,7 +140,7 @@
             // 
             salaryTeacherTextBox.Location = new Point(284, 258);
             salaryTeacherTextBox.Name = "salaryTeacherTextBox";
-            salaryTeacherTextBox.Size = new Size(275, 45);
+            salaryTeacherTextBox.Size = new Size(275, 39);
             salaryTeacherTextBox.TabIndex = 10;
             // 
             // label5
@@ -147,7 +148,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(35, 261);
             label5.Name = "label5";
-            label5.Size = new Size(97, 38);
+            label5.Size = new Size(82, 32);
             label5.TabIndex = 9;
             label5.Text = "Salary:";
             // 
@@ -155,7 +156,7 @@
             // 
             subjectTeacherTextBox.Location = new Point(284, 197);
             subjectTeacherTextBox.Name = "subjectTeacherTextBox";
-            subjectTeacherTextBox.Size = new Size(275, 45);
+            subjectTeacherTextBox.Size = new Size(275, 39);
             subjectTeacherTextBox.TabIndex = 8;
             // 
             // label4
@@ -163,7 +164,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(35, 200);
             label4.Name = "label4";
-            label4.Size = new Size(114, 38);
+            label4.Size = new Size(98, 32);
             label4.TabIndex = 7;
             label4.Text = "Subject:";
             // 
@@ -171,7 +172,7 @@
             // 
             nameTeacherTextBox.Location = new Point(284, 137);
             nameTeacherTextBox.Name = "nameTeacherTextBox";
-            nameTeacherTextBox.Size = new Size(275, 45);
+            nameTeacherTextBox.Size = new Size(275, 39);
             nameTeacherTextBox.TabIndex = 6;
             // 
             // label3
@@ -179,7 +180,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(35, 140);
             label3.Name = "label3";
-            label3.Size = new Size(200, 38);
+            label3.Size = new Size(172, 32);
             label3.TabIndex = 5;
             label3.Text = "Teacher Name:";
             // 
@@ -187,7 +188,7 @@
             // 
             idTeacherTextBox.Location = new Point(284, 75);
             idTeacherTextBox.Name = "idTeacherTextBox";
-            idTeacherTextBox.Size = new Size(275, 45);
+            idTeacherTextBox.Size = new Size(275, 39);
             idTeacherTextBox.TabIndex = 4;
             // 
             // label2
@@ -195,7 +196,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(35, 78);
             label2.Name = "label2";
-            label2.Size = new Size(153, 38);
+            label2.Size = new Size(131, 32);
             label2.TabIndex = 3;
             label2.Text = "Teacher ID:";
             // 
@@ -205,7 +206,7 @@
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(474, 24);
             label1.Name = "label1";
-            label1.Size = new Size(567, 60);
+            label1.Size = new Size(477, 50);
             label1.TabIndex = 0;
             label1.Text = "Teacher Form Information";
             // 
@@ -235,7 +236,7 @@
             // 
             passwordTextBox.Location = new Point(280, 144);
             passwordTextBox.Name = "passwordTextBox";
-            passwordTextBox.Size = new Size(275, 45);
+            passwordTextBox.Size = new Size(275, 39);
             passwordTextBox.TabIndex = 8;
             // 
             // label9
@@ -243,7 +244,7 @@
             label9.AutoSize = true;
             label9.Location = new Point(31, 147);
             label9.Name = "label9";
-            label9.Size = new Size(138, 38);
+            label9.Size = new Size(116, 32);
             label9.TabIndex = 7;
             label9.Text = "Password:";
             // 
@@ -251,7 +252,7 @@
             // 
             usernameTextBox.Location = new Point(280, 76);
             usernameTextBox.Name = "usernameTextBox";
-            usernameTextBox.Size = new Size(275, 45);
+            usernameTextBox.Size = new Size(275, 39);
             usernameTextBox.TabIndex = 6;
             // 
             // label8
@@ -259,7 +260,7 @@
             label8.AutoSize = true;
             label8.Location = new Point(31, 79);
             label8.Name = "label8";
-            label8.Size = new Size(148, 38);
+            label8.Size = new Size(126, 32);
             label8.TabIndex = 5;
             label8.Text = "Username:";
             // 
@@ -307,12 +308,17 @@
             deleteTeacherButton.UseVisualStyleBackColor = true;
             deleteTeacherButton.Click += deleteTeacherButton_Click;
             // 
+            // Search
+            // 
+           
+            // 
             // TeacherForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 38F);
+            AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(1488, 861);
+            Controls.Add(Search);
             Controls.Add(deleteTeacherButton);
             Controls.Add(closeButton);
             Controls.Add(updateTeacherButton);
@@ -335,6 +341,7 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -365,5 +372,6 @@
         private Button updateTeacherButton;
         private Button closeButton;
         private Button deleteTeacherButton;
+        private TextBox Search;
     }
 }

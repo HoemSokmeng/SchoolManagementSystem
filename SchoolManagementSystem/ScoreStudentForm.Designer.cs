@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Lime;
+            panel1.BackColor = Color.RoyalBlue;
             panel1.Controls.Add(label1);
             panel1.ForeColor = SystemColors.ButtonHighlight;
             panel1.Location = new Point(0, 0);
@@ -76,7 +76,7 @@
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(450, 23);
             label1.Name = "label1";
-            label1.Size = new Size(435, 60);
+            label1.Size = new Size(365, 50);
             label1.TabIndex = 1;
             label1.Text = "Score Student Form";
             // 
@@ -84,7 +84,7 @@
             // 
             idScoreStudentTextBox.Location = new Point(405, 129);
             idScoreStudentTextBox.Name = "idScoreStudentTextBox";
-            idScoreStudentTextBox.Size = new Size(212, 45);
+            idScoreStudentTextBox.Size = new Size(212, 39);
             idScoreStudentTextBox.TabIndex = 0;
             // 
             // scoreStudentDataGridView
@@ -115,7 +115,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(192, 136);
             label2.Name = "label2";
-            label2.Size = new Size(153, 38);
+            label2.Size = new Size(132, 32);
             label2.TabIndex = 4;
             label2.Text = "Student ID:";
             // 
@@ -124,7 +124,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(145, 210);
             label3.Name = "label3";
-            label3.Size = new Size(200, 38);
+            label3.Size = new Size(173, 32);
             label3.TabIndex = 6;
             label3.Text = "Student Name:";
             // 
@@ -132,7 +132,7 @@
             // 
             nameScoreStudentTextBox.Location = new Point(405, 203);
             nameScoreStudentTextBox.Name = "nameScoreStudentTextBox";
-            nameScoreStudentTextBox.Size = new Size(212, 45);
+            nameScoreStudentTextBox.Size = new Size(212, 39);
             nameScoreStudentTextBox.TabIndex = 5;
             // 
             // label4
@@ -140,7 +140,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(271, 279);
             label4.Name = "label4";
-            label4.Size = new Size(74, 38);
+            label4.Size = new Size(64, 32);
             label4.TabIndex = 8;
             label4.Text = "Java:";
             // 
@@ -148,7 +148,7 @@
             // 
             javaTextBox.Location = new Point(405, 276);
             javaTextBox.Name = "javaTextBox";
-            javaTextBox.Size = new Size(212, 45);
+            javaTextBox.Size = new Size(212, 39);
             javaTextBox.TabIndex = 7;
             // 
             // label5
@@ -156,7 +156,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(777, 129);
             label5.Name = "label5";
-            label5.Size = new Size(110, 38);
+            label5.Size = new Size(94, 32);
             label5.TabIndex = 10;
             label5.Text = "Python:";
             // 
@@ -164,7 +164,7 @@
             // 
             pythonTextBox.Location = new Point(962, 129);
             pythonTextBox.Name = "pythonTextBox";
-            pythonTextBox.Size = new Size(212, 45);
+            pythonTextBox.Size = new Size(212, 39);
             pythonTextBox.TabIndex = 9;
             // 
             // label6
@@ -172,7 +172,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(777, 203);
             label6.Name = "label6";
-            label6.Size = new Size(98, 38);
+            label6.Size = new Size(84, 32);
             label6.TabIndex = 12;
             label6.Text = "Cshap:";
             // 
@@ -180,7 +180,7 @@
             // 
             cshapTextBox.Location = new Point(962, 203);
             cshapTextBox.Name = "cshapTextBox";
-            cshapTextBox.Size = new Size(212, 45);
+            cshapTextBox.Size = new Size(212, 39);
             cshapTextBox.TabIndex = 11;
             // 
             // label7
@@ -188,7 +188,7 @@
             label7.AutoSize = true;
             label7.Location = new Point(777, 280);
             label7.Name = "label7";
-            label7.Size = new Size(127, 38);
+            label7.Size = new Size(109, 32);
             label7.TabIndex = 14;
             label7.Text = "Big Data:";
             // 
@@ -196,7 +196,7 @@
             // 
             bigDataTextBox.Location = new Point(962, 280);
             bigDataTextBox.Name = "bigDataTextBox";
-            bigDataTextBox.Size = new Size(212, 45);
+            bigDataTextBox.Size = new Size(212, 39);
             bigDataTextBox.TabIndex = 13;
             // 
             // label8
@@ -204,7 +204,7 @@
             label8.AutoSize = true;
             label8.Location = new Point(611, 349);
             label8.Name = "label8";
-            label8.Size = new Size(111, 38);
+            label8.Size = new Size(95, 32);
             label8.TabIndex = 16;
             label8.Text = "English:";
             // 
@@ -212,7 +212,7 @@
             // 
             englishTextBox.Location = new Point(748, 342);
             englishTextBox.Name = "englishTextBox";
-            englishTextBox.Size = new Size(212, 45);
+            englishTextBox.Size = new Size(212, 39);
             englishTextBox.TabIndex = 15;
             // 
             // label9
@@ -220,7 +220,7 @@
             label9.AutoSize = true;
             label9.Location = new Point(178, 433);
             label9.Name = "label9";
-            label9.Size = new Size(89, 38);
+            label9.Size = new Size(77, 32);
             label9.TabIndex = 17;
             label9.Text = "Total: ";
             // 
@@ -229,7 +229,7 @@
             totalLabel.AutoSize = true;
             totalLabel.Location = new Point(282, 433);
             totalLabel.Name = "totalLabel";
-            totalLabel.Size = new Size(0, 38);
+            totalLabel.Size = new Size(0, 32);
             totalLabel.TabIndex = 18;
             // 
             // label11
@@ -237,7 +237,7 @@
             label11.AutoSize = true;
             label11.Location = new Point(517, 433);
             label11.Name = "label11";
-            label11.Size = new Size(123, 38);
+            label11.Size = new Size(106, 32);
             label11.TabIndex = 19;
             label11.Text = "Average:";
             // 
@@ -246,7 +246,7 @@
             lableAverage.AutoSize = true;
             lableAverage.Location = new Point(646, 433);
             lableAverage.Name = "lableAverage";
-            lableAverage.Size = new Size(0, 38);
+            lableAverage.Size = new Size(0, 32);
             lableAverage.TabIndex = 20;
             // 
             // label13
@@ -254,7 +254,7 @@
             label13.AutoSize = true;
             label13.Location = new Point(929, 433);
             label13.Name = "label13";
-            label13.Size = new Size(97, 38);
+            label13.Size = new Size(82, 32);
             label13.TabIndex = 21;
             label13.Text = "Grade:";
             // 
@@ -263,7 +263,7 @@
             gradeLabel.AutoSize = true;
             gradeLabel.Location = new Point(1032, 433);
             gradeLabel.Name = "gradeLabel";
-            gradeLabel.Size = new Size(0, 38);
+            gradeLabel.Size = new Size(0, 32);
             gradeLabel.TabIndex = 22;
             // 
             // saveScoreStudentButton
@@ -308,9 +308,9 @@
             // 
             // ScoreStudentForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 38F);
+            AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(192, 255, 192);
+            BackColor = Color.Aqua;
             ClientSize = new Size(1351, 945);
             Controls.Add(deleteScoreStudentButton);
             Controls.Add(closeButton);
